@@ -1,0 +1,87 @@
+.homePage{
+
+    // Mobile
+    @media only screen and (max-width: 500px){
+        .upcomingEvents{
+            .eventHolder{
+                justify-content: center;
+            }
+    }
+}
+
+// Desktop
+@media only screen and (min-width: 1147px){
+
+}
+
+.upcomingEvents{
+    padding: 40px 40px 0 40px;
+    min-height: 320px;
+    background-color: #540D6E;
+    color: #fff;
+        .title{
+            p{
+                font-size: 25px;
+            }
+            hr{
+                @include underline(300px, -10px);
+            }
+        }
+        .eventHolder{
+            // padding: px 0;
+            flex-wrap: wrap;
+            display:flex;
+            // padding-top: 30px;
+            height: 100%;
+            // justify-content: center;
+            align-items: center;
+            // background-color: blue;
+            .event{
+                display: flex;
+                padding: 20px 0;
+                .date{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #EE4367;
+                    padding-bottom: 5px;
+                    width: 50px;
+                    height: 50px;
+                    justify-content: center;
+                    align-items: center;
+                    .day{
+                        p{
+                            margin: 0;
+                            font-weight: bold;
+                        }
+                        font-size: 20px;
+                        width: min-content;
+                    }
+                    .month{
+                        margin: 0;
+                        p{
+                            margin: 0;
+                        }
+                        width: min-content;
+                        font-size: 12px;
+                        margin: 0;
+                    }
+                }
+                .eventText{
+                    padding: 0 20px;
+                    width: 160px;
+                    .title{
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                    .caption{
+                        p{
+                            font-size: 13px;
+                            color: #EE4367;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

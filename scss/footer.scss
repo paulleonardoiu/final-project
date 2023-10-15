@@ -1,0 +1,70 @@
+footer{
+    background-color: #EE4367;
+    height: 455px;
+    color: #fff;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .logo{
+        @include logo(white);
+        p{
+            font-size: 20px;
+        }
+    }
+    .address{
+        // margin-top: 44px;
+        text-align: center;
+        p{
+            margin-bottom: 3px;
+        }
+    }
+    .subscribe{
+        background-color: blue;
+        width: 45%;
+        form{
+            width: 100%;
+            display: flex;
+            input{
+                width: 80%;
+                background-color: #F56B88;
+                border: 0;
+                padding: 20px;
+                color: white;
+            }
+            input::placeholder{
+                color: rgb(255, 255, 255, 0.8);
+            }
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                text-decoration: none;
+                border: 0;
+                background-color: #fff;
+                color: #EE4367;
+                padding: 20px 40px;
+                text-align: center;
+                p{
+                    margin: 0;
+                    font-size: 16px;
+                }
+                
+            }
+        }
+    }
+    .socials{
+        i{
+            font-size: 30px;
+            color: white;
+            margin: 0 15px;
+        }
+    }
+    .copyright{
+        p{
+            color: rgba(255,255,255,0.8);
+        }
+    }
+}

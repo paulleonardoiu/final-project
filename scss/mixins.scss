@@ -1,0 +1,27 @@
+@mixin underline($width, $margin-top){
+    border-bottom: 1px solid black;
+    width: $width;
+    margin-top: $margin-top;
+}
+
+@mixin logo($color){
+    padding: 30px 10px 0px 0px;
+    align-items: center;
+    display: flex;
+    height: 20px;
+    border: 2px solid $color;
+    width: 75px;
+}
+
+@mixin hero($color, $url){
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, $color, $color), url($url);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@mixin color($color){
+    
+}

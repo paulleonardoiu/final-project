@@ -1,0 +1,72 @@
+.galleryDetails{
+    .hero{
+        height: 558px;
+        padding: 180px 150px 0 150px;
+        .galleryImage1{@include hero(rgba(255, 209, 64, 0.8), '../assets/images/gallery/1.png');}
+        .galleryImage2{@include hero(rgba(238, 67, 103, 0.8), '../assets/images/gallery/2.png');}
+        .galleryImage3{@include hero(rgba(8, 173, 105, 0.8), '../assets/images/gallery/3.png');}
+        .galleryImage4{@include hero(rgba(84, 13, 110, 0.8), '../assets/images/gallery/4.png');}
+        .galleryImage5{@include hero(rgba(59, 206, 171, 0.8), '../assets/images/gallery/5.png');}
+    }
+    .content{
+        padding: 0 150px;
+        margin-top: -25px;
+        width: 100%;
+        height: 100%;
+        .title{
+            margin-top: -285px;
+            .galleryColor1{
+                color: rgba(255, 209, 64, 1);
+                text-shadow: 1px 2px 4px #707070;
+            }
+            .galleryColor2{
+                color: rgba(238, 67, 103, 1);
+                text-shadow: 1px 2px 4px #707070;
+            }
+            .galleryColor3{
+                color: rgba(8, 173, 105, 1);
+                text-shadow: 1px 2px 4px #707070;
+            }
+            .galleryColor4{
+                color: rgba(84, 13, 110, 1);
+                text-shadow: 1px 2px 4px #707070;
+            }
+            .galleryColor5{
+                color: rgba(59, 206, 171, 1);
+                text-shadow: 1px 2px 4px #707070;
+            }
+            width: 100%;
+            // text-overflow: clip;
+            p{
+                text-align: right;
+                // right: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 100%;
+                font-size: 700%;
+                margin-bottom: 0;
+                height: 320px;
+                span{
+                    font-size: 300px;
+                }
+            }
+        }
+        hr{
+            @include underline(250px, -10px);
+        }
+        .text{
+            // padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 0px 0 40px 0;
+            p{
+                width: 50%;
+                display: flex;
+                
+                // padding-right: 20px;
+            }
+        }
+    }
+}

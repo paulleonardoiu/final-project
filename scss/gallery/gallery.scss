@@ -1,0 +1,85 @@
+.site-container{
+    // Mobile
+    @media only screen and (max-width: 1300px){
+        .galleryPage{
+            padding: 140px 40px;
+            .gallery{
+                justify-content: unset;
+                a{
+                    div{
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    // Desktop
+    @media only screen and (min-width: 1300px){
+        .galleryPage{
+            padding: 140px 150px 0 150px;
+
+            .gallery{
+                justify-content: center;
+            }
+        }
+    }
+    .galleryPage{
+        .header{
+            p{
+                font-size: 25px;
+            }
+            hr{
+                @include underline(150px, -10px);
+            }
+        }
+        // height: 100%;
+        
+        .gallery{
+            
+            // height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px 0 60px 0;
+            width: 100%;
+            margin: 0 auto;
+            // background-color: blue;
+            // justify-content: center;
+            
+            .mr{
+                margin-right: 20px;
+            }
+            
+            .mb{
+                margin-bottom: 20px;
+            }
+            
+            .yellow{
+                background-image: linear-gradient(to top, rgba(255, 209, 64, 0.6), rgba(255, 209, 64, 0.6)),url('../assets/images/gallery/1.png');
+                width: 489px;
+                height: 187px;
+            }
+            .red{
+                background-image: linear-gradient(to top, rgba(238, 67, 103, 0.6), rgba(238, 67, 103, 0.6)),url('../assets/images/gallery/2.png');
+                width: 187px;
+                height: 187px;
+            }
+            .green{
+                background-image: linear-gradient(to top, rgba(8, 173, 105, 0.6), rgba(8, 173, 105, 0.6)),url('../assets/images/gallery/3.png');
+                width: 265px;
+                height: 187px;
+            }
+            .purple{
+                background-image: linear-gradient(to top, rgba(84, 13, 110, 0.6), rgba(84, 13, 110, 0.6)),url('../assets/images/gallery/4.png');
+                width: 603px;
+                height: 306px;
+                margin-right: 23px;
+            }
+            .blue{
+                background-image: linear-gradient(to top, rgba(59, 206, 171, 0.6), rgba(59, 206, 171, 0.6)),url('../assets/images/gallery/5.png');
+                width: 355px;
+                height: 306px;
+            }
+        }
+    }
+}
